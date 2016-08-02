@@ -7,8 +7,8 @@ var oDivs = oNumber.querySelectorAll("div");
 var oSpans = oNumber.querySelectorAll("span");
 var i = 0;
 for (i = 0; i < oDivs.length; i++) {
-    oDivs[i].style.webkitTransform = "rotate("+ i*30 + "deg)";
+    transform(oDivs[i], 30);
 }
 for (i = 0; i < oSpans.length; i++) {
-    oSpans[i].style.webkitTransform = "rotate(" + i*-30 +"deg)";
+    transform(oSpans[i], -30);
 }
