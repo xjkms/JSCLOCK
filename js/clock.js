@@ -17,7 +17,7 @@ for (i = 0; i < oSpans.length; i++) {
     transform(oSpans[i], i*-30);
 }
 
-function tick() {
+setInterval(function tick() {
     time = new Date();
     var nowHour = time.getHours();
     var nowMinute = time.getMinutes();
@@ -25,9 +25,7 @@ function tick() {
     transform(hourPointer, nowHour%12*30+nowMinute/60*30);
     transform(minutePointer, nowMinute*6+nowSecond/60*6);
     transform(secondPointer, nowSecond*6);
-}
-
-window.requestAnimationFrame(tick);
+}, 1);
 
 
 
