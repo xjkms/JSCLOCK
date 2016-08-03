@@ -4,5 +4,5 @@
 function transform(obj, value) {
     var oStyle = obj.style;
     oStyle.transform = oStyle.transform || oStyle.webkitTransform || oStyle.msTransform || oStyle.mozTransform;
-    oStyle.transform = "rotate(" + i * value + "deg)";
+    oStyle.transform = "rotate(" + value + "deg)";
 }
